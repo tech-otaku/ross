@@ -1,0 +1,841 @@
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+/* * *
+ * START: 404 Page
+ */
+body.ross-descendant.error404 h1 {
+/* .error404 h1 has margin-bottom set to 20px in the parent's style.css but causes the main header menu on the 404 page to appear as though it has far more space on the left than other pages. Setting it to 0 below and then setting it back to 20px as an inline stlye in 404.php appears to correct the issue. Wierd!!!! */
+	margin-bottom: 0;
+}
+
+/* * *
+ * START: Home Menu Item
+ */
+body.ross-descendant .menu-home-item {
+	display: none;
+}
+
+/* * *
+ * START: For use with the_content() 'Read More'
+ */
+body.ross-descendant #posts.group .entry {
+	margin: 10px 0;
+}
+
+body.ross-descendant #posts.group .entry p:last-child {
+	margin-bottom: 0;
+}
+
+/* * *
+ * START: Author Image 
+ */
+body.ross-descendant #about-author img,
+body.ross-descendant img.avatar {
+	background: #f7f7f7;
+	border: 1px solid #fff;
+	padding: 4px;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+/* * *
+ * START: Tables 
+ */
+body.ross-descendant table {
+	border-bottom: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 2;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+body.ross-descendant caption,
+body.ross-descendant th,
+body.ross-descendant td {
+	font-weight: normal;
+	text-align: left;
+}
+
+body.ross-descendant caption {
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+body.ross-descendant th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+body.ross-descendant td {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+}
+
+/* * *
+ * START: Comments 
+ */
+body.ross-descendant .bypostauthor > .comment-body {
+/*color: black;
+	background-color: #f7f7f7;*/
+}
+
+/* * *
+ * START: Featured Slider 
+ */
+body.ross-descendant #slider-overlay,
+body.ross-descendant #featured-slider .post-thumb {
+	height: 375px;
+}
+
+body.ross-descendant #slider-nav {
+	top: 335px;
+}
+
+/* * *
+ * START: Post Thumb 
+ */
+body.ross-descendant #posts .post-thumb {
+	height: 300px;
+	width: 644px;
+	margin-bottom: 25px;
+	overflow: visible;
+}
+
+body.ross-descendant #posts .post-thumb img {
+	background: #f7f7f7;
+	border: 1px solid #fff;
+	padding: 6px;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+body.ross-descendant .classic-blog #posts .post-thumb {
+	height: 168px;
+}
+
+body.ross-descendant #related-posts .post-thumb {
+	height: 74px;
+}
+
+/* * *
+ * START: Breadcrumbs 
+ */
+body.ross-descendant #breadcrumbs {
+/*font-family: Roboto, sans-serif;*/
+	font-size: 16px;
+	letter-spacing: .1em;
+	height: 31px;
+	width: 1039px;
+	margin: 0 auto;
+	background: #333;
+	border-left: 1px solid #ddd;
+	padding-top: 10px;
+	color: #ccc;
+/*border-right: 1px solid #ddd;*/
+}
+
+body.ross-descendant #breadcrumbs a,
+body.ross-descendant #breadcrumbs .separator {
+	padding: 10px 10px 9px;
+	color: #ccc;
+	background: #333;
+}
+
+body.ross-descendant #breadcrumbs a:link:after {
+/*content: " »";*/
+}
+
+body.ross-descendant #breadcrumbs .separator {
+	padding: 10px 2px 9px;
+}
+
+body.ross-descendant #breadcrumbs a:hover {
+/* The background-color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+	color: white;
+	text-decoration: none;
+}
+
+body.ross-descendant #breadcrumbs .last-crumb {
+	padding-left: 9px;
+}
+
+body.ross-descendant #breadcrumbs .last-crumb .highlight {
+/* The color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+}
+
+/* * *
+ * START: Sitemap 
+ */
+body.ross-descendant .sitemap a {
+	color: #525252;
+}
+
+body.ross-descendant .sitemap a:hover {
+/* The color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+	text-decoration: none;
+}
+
+/* * *
+ * START: Popular Posts Sidebar Widget 
+ */
+body.ross-descendant .widget_popular li {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #333;
+	list-style: none;
+	line-height: 24px;
+}
+
+body.ross-descendant .widget_popular li:first-child {
+	padding-top: 0;
+}
+
+body.ross-descendant .widget_popular li a {
+	color: #999;
+	margin-right: 5px;
+}
+
+body.ross-descendant .widget_popular li a:hover {
+/* The color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+	text-decoration: none;
+}
+
+/* * * 
+ * START: Additional Sidebars 
+ */
+body.ross-descendant #tertiary-sidebar,
+body.ross-descendant #quaternary-sidebar,
+body.ross-descendant #quinary-sidebar {
+	width: 300px;
+	padding: 8px 20px 0;
+	margin-bottom: 30px;
+	float: right;
+	background-color: #222;
+	color: #999;
+}
+
+/* * *
+ * START: Back-To-Top
+ */
+body.ross-descendant .back-to-top {
+	border: 1px solid #eee;
+/*
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    */
+}
+
+/* * *
+ * START: Post Meta 
+ */
+body.ross-descendant.logged-in.single .post-meta {
+	float: none;
+}
+
+body.ross-descendant.logged-in .post-meta li {
+	padding-left: 30px;
+	margin-right: 34px;
+}
+
+body.ross-descendant.logged-in .post-meta li:last-of-type {
+	margin-right: 20px;
+}
+
+body.ross-descendant.logged-in .post-meta .post-views {
+	background: none;
+}
+
+body.ross-descendant.logged-in .post-meta .dpvc-post-views {
+	margin-top: 6px;
+	padding: 3px 5px;
+	border: 1px solid #d3d3d3;
+	font-size: 12px;
+}
+
+body.ross-descendant.logged-in .post-meta .dpvc-post-views a {
+/*color: #fff;*/
+}
+
+/* * * 
+ * START: Post Title 
+ */
+body.ross-descendant h2.post-title {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+/* * * 
+ * START: Compact Archives Widget 
+ */
+body.ross-descendant ul.compact-archives li a {
+	color: #999;
+}
+
+body.ross-descendant ul.compact-archives li a:hover {
+/* The color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+	text-decoration: none;
+}
+
+body.ross-descendant ul.compact-archives li span.emptymonth {
+	color: #444;
+}
+
+/* * * 
+ * START: Related & Popular Posts 
+ */
+body.ross-descendant #popular-related-posts a.thumbnail_title {
+	color: #777;
+}
+
+body.ross-descendant #popular-related-posts a.thumbnail_title:hover {
+/* The color is set to the selected theme accent color in wp-content/themes/ross-descendant/custom-styles.php */
+	text-decoration: none;
+}
+
+body.ross-descendant #popular-related-posts a.date {
+	color: #bbb;
+}
+
+/* * * 
+ * START: Post's Table Of Contents (TOC)
+ */
+body.ross-descendant .entry ul li {
+	list-style-type: none;
+}
+
+/* * * 
+ * START: Paginated Posts 
+ */
+body.ross-descendant p.paginated {
+	margin-bottom: 5px !important;
+}
+
+body.ross-descendant .paginated .page-number {
+	padding: 0 5px;
+	border: 1px solid #bbb;
+}
+
+/* ------------------------------------------------------------------------------------------
+                        SYNTAX HIGHLIGHTER [OVERRIDES shCore.css]
+------------------------------------------------------------------------------------------- */
+pre,
+.syntaxhighlighter {
+	width: 99% !important;
+	font-size: 1em !important;
+	font-family: "Consolas";
+	background-color: #efefef !important;
+	border: 1px solid #d9d9d9 !important;
+}
+
+.syntaxhighlighter table td.code .line {
+	padding: 0 .5em !important;
+}
+
+.syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter.nogutter td.code .line {
+	padding-left: .5em !important;
+}
+
+.comment-body .syntaxhighlighter {
+	border: 1px solid #ccc !important;
+}
+
+/* ------------------------------------------------------------------------------------------
+                    SYNTAX HIGHLIGHTER [OVERRIDES shThemeDefaults.css]
+------------------------------------------------------------------------------------------- */
+.syntaxhighlighter {
+/* Needs to be commented-out in shThemeDefaults.css */
+	background-color: #efefef !important;
+}
+
+.syntaxhighlighter .line.alt1 {
+/* Needs to be commented-out in shThemeDefaults.css */
+	background-color: #efefef !important;
+}
+
+.syntaxhighlighter .line.alt2 {
+/* Needs to be commented-out in shThemeDefaults.css */
+	background-color: #efefef !important;
+}
+
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+	background-color: #d7fefe !important;
+}
+
+.syntaxhighlighter .gutter .line.highlighted {
+	background-color: #d7fefe !important;
+	color: black !important;
+}
+
+/* ------------------------------------------------------------------------------------------
+                                        POST IMAGES
+------------------------------------------------------------------------------------------- */
+.post-image-frame {
+	width: 100%;
+	text-align: center;
+}
+
+.post-image-frame img {
+	margin: 0 auto !important;
+}
+
+.post-image-caption {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	font-size: .9em;
+}
+
+.frame {
+	border: 1px solid #eaeaea;
+	display: inline-block;
+}
+
+.frame img {
+	background: #F5F5F5 none repeat scroll 0 0;
+	border: 1px solid #fff;
+	padding: 8px;
+	margin: 0 !important;
+	vertical-align: top;
+}
+
+/* ------------------------------------------------------------------------------------------
+                                POST CONTENT FORMATTING
+------------------------------------------------------------------------------------------- */
+.system-font, .gui-input-font {
+	display: inline;
+/*font-family: "Lucida Console", Monaco, monospace; */
+	font-family: Consolas, Monaco, monospace;
+	font-size: 1.1em;
+	vertical-align: baseline;
+	color: #999;
+}
+
+p.line-break {
+	margin: 0;
+	line-height: 1em;
+}
+
+.entry-content ul {
+	list-style-type: none;
+}
+
+ul.arrow_list {
+/*list-style-type: none;*/
+	border: 1px solid #f7f5e7;
+	padding: 10px 0 10px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: white;
+}
+
+.container {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+/*
+.sitemap_list li:before {
+	font-weight: 900;
+	font-size: .95em;
+	content: '» ';
+}
+*/
+.sitemap_list li a {
+	background: transparent url(/wp-content/themes/ross-descendant/images/grey/mini_icons.png) no-repeat scroll -265px 2px;
+	display: block;
+	padding: 7px 0 5px 15px;
+	line-height: 1em;
+}
+
+.divider {
+	clear: both;
+	display: block;
+/*margin-bottom: 20px;*/
+	padding-top: 20px;
+	width: 95%;
+}
+
+.top {
+	font-size: 12px;
+	line-height: 10px;
+/*margin-bottom: 40px;*/
+	text-align: right;
+	position: absolute;
+	top: 13px;
+	right: 0;
+}
+
+.divider {
+	background: url(/wp-content/themes/ross-descendant/images/line.gif) repeat-x left bottom;
+}
+
+.quoted-text {
+	font-style: italic;
+	padding: 20px 60px;
+	text-align: justify;
+}
+
+.entry-meta > span {
+	margin-right: 19px;
+}
+
+pre {
+	color: #141412;
+	background-color: #efefef;
+	border: 1px solid #d9d9d9;
+}
+
+/* ------------------------------------------------------------------------------------------
+                                        BOXES
+------------------------------------------------------------------------------------------- */
+.download_box,
+.warning_box,
+.success_box,
+.info_box,
+.note_box {
+	padding: 20px 15px 20px 55px;
+	margin-bottom: 20px;
+	font-size: 1em;
+	letter-spacing: .3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.download_box a,
+.warning_box a,
+.success_box a,.info_box a,
+.note_box a {
+	text-decoration: underline !important;
+}
+
+.info_box {
+	background: #bfe4f9 url(/wp-content/themes/ross-descendant/images/info.png) no-repeat 10px 15px;
+	border: 1px solid #68a2cf;
+}
+
+.info_box.custom {
+	background: #f5f5f5 url(/wp-content/themes/ross-descendant/images/info-bw.png) no-repeat 10px 15px;
+	border: 1px solid #cccccc !important;
+}
+
+.note_box {
+	background: #fdebae url(/wp-content/themes/ross-descendant/images/notebook.png) no-repeat 10px 15px;
+	border: 1px solid #e6c555;
+}
+
+.warning_box {
+	background: #ffcccc url(/wp-content/themes/ross-descendant/images/stop.png) no-repeat 10px 15px;
+	border: 1px solid #ff9999;
+}
+
+.download_box {
+	background: #dee3ab url(/wp-content/themes/ross-descendant/images/down_alt.png) no-repeat 10px 15px;
+	border: 1px solid #a3c159;
+}
+
+.info_box,
+.info_box a {
+	color: #2e6093;
+}
+
+.note_box,
+.note_box a {
+	color: #9e660d;
+}
+
+.warning_box,
+.warning_box a {
+	color: #c31b00;
+}
+
+.download_box,
+.download_box a {
+	color: #5e6f33;
+}
+
+.dl {
+	font-size: 1.1em;
+	margin: 0 !important;
+}
+
+.dl .link {
+	padding-right: 50px;
+}
+
+.dl .filedate,
+.dl .count {
+	float: right;
+}
+
+/* ------------------------------------------------------------------------------------------
+                                POPULAR AND RELATED POSTS
+------------------------------------------------------------------------------------------- */
+.clearboth {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 100%;
+}
+
+#popular-related-posts {
+	float: left;
+	width: 100%;
+/*height: 600px;*/
+	padding: 20px 0;
+	margin: 30px 0 0;
+	background: #eee;
+/*border: 1px solid;*/
+}
+
+.one-half {
+	width: 49%;
+/*padding-right: 20px;*/
+	display: block;
+	float: left;
+}
+
+.one-half,
+.last {
+	margin-left: 5px;
+}
+
+ul.thumbnail_list {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ul.thumbnail_list li {
+/*margin-left: -40px;*/
+/*height: 80px;*/
+}
+
+.small_frame img {
+	background: #f7f7f7;
+	border: 1px solid #fff;
+	padding: 4px;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+ul.thumbnail_list .align-left {
+/*
+	margin-bottom: 3px;
+	margin-top: 5px;
+	padding-bottom: 10px;
+    */
+}
+
+.align-left,
+img.align-left,
+a img.align-left {
+	float: left;
+	margin: 10px 16px 10px 0;
+}
+
+.thumbnail_title {
+	display: block;
+	font-size: 15px;
+	padding-top: 10px;
+/*line-height: 10px;*/
+	width: 302px;
+}
+
+.thumbnail_list li, ul.thumbnail_list {
+	background: url(/wp-content/themes/ross-descendant/images/line.gif) repeat-x scroll center bottom;
+}
+
+.thumbnail_list li {
+/*padding-bottom: 5px;*/
+	float: left;
+/*position: relative;*/
+}
+
+.thumbnail_list .date {
+	color: #aaa;
+	font-size: 12px;
+/*text-transform: uppercase;*/
+	line-height: 15px;
+}
+
+.nav-menu li {
+	display: block;
+	float: left;
+}
+
+/*
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	background-color: rgb(188,54,10);
+	background-color: rgba(188,54,10,0.9);
+	color: #ffffff;
+	font-style: normal;
+}
+*/
+.menu-footer-container {
+	float: right;
+}
+
+.menu-footer-container li a {
+	font-size: .85em;
+	padding: 10px 10px 0 0;
+}
+
+.menu-footer-container li a:hover {
+/*background-color: #e63f2a;*/
+	color: inherit;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.menu-footer-container .current_page_item > a,
+.menu-footer-container .current_page_ancestor > a,
+.menu-footer-container .current-menu-item > a,
+.menu-footer-container .current-menu-ancestor > a {
+	color: #141412;
+	background-color: transparent;
+}
+
+div.sharedaddy {
+	padding: 0 0 15px;
+}
+
+div.sharedaddy div.sd-block {
+	padding: 15px 0 5px;
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,.13);
+}
+
+/*** Tag Cloud Styling ***/
+.ctc {
+	margin: -5px;
+	text-transform: capitalize;
+	float: left;
+}
+
+.ctc a {
+	display: block;
+	float: left;
+	padding: 6px 13px;
+	margin: 5px;
+	color: #999;
+	border: 1px solid #333;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+
+.ctc a:hover {
+	color: #fff;
+	border-color: #FF6464;
+	text-decoration: none;
+}
+
+/* START: ALTERNATE COLOURS */
+/*
+body.ross-descendant #posts {
+    padding: 30px 0;
+}
+
+#posts .post {
+    width: 678px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+body.ross-descendant article {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+body.ross-descendant article:nth-child(even) {
+    background-color: #fafafa;
+}
+
+body.ross-descendant .pagination {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+body.ross-descendant h2.post-title {
+	width: 658px;
+}
+*/
+/* END: ALTERNATE COLOURS */
+/******************************************************
+    smaller than 1056px
+*******************************************************/
+@media screen and (max-width: 1056px) {
+	/* START: Home Menu Item */
+	body.ross-descendant .menu-home-item {
+		display: block;
+	}
+	
+	/* START: Breadcrumbs */
+	body.ross-descendant #breadcrumbs {
+		display: none;
+	}
+}
+
+/******************************************************
+    smaller than 718px
+*******************************************************/
+@media screen and (max-width: 718px) {
+	/* START: Featured Slider */
+	body.ross-descendant #slider-overlay, body.ross-descendant #featured-slider .post-thumb {
+		height: 161px;
+	}
+	
+	body.ross-descendant #slider-nav {
+		top: 121px;
+	}
+	
+	/* START: Post Thumb */
+	body.ross-descendant #posts .post-thumb {
+		height: 121px;
+		width: 260px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	
+	body.ross-descendant #posts .post-thumb img {
+		background: none;
+		border: 0;
+		padding: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	/* START: Post Meta */
+	body.ross-descendant .post-meta .post-author {
+		display: none;
+	}
+	
+	/* START: Popular & Related Posts */
+	body.ross-descendant #popular-related-posts {
+		display: none;
+	}
+}
